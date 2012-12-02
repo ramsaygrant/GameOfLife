@@ -2,3 +2,4 @@ C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\GoF.Model\bin\Deb
 C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\GoF.Model\bin\Debug\GoF.Model.pdb
 C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\GoF.Model\obj\Debug\GoF.Model.dll
 C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\GoF.Model\obj\Debug\GoF.Model.pdb
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\GoF.Model\obj\Debug\GoF.Model.csprojResolveAssemblyReference.cache

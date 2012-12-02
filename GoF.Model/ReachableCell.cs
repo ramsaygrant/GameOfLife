@@ -11,7 +11,7 @@ namespace GoF.Model
         // Dictionary to hold list of reachable cells co-ordinates for specified cell type
         public static Dictionary<CellTypeEnum, List<CoOrdinates>> ReachableCells;
         /// <summary>
-        /// initialize all reachable cells in Dictionary(Key=> CellTypeEnum, Value => List of Reachable cell co-ordinates
+        /// initialize all reachable cells in Dictionary(Key=> CellTypeEnum, Value => List of Reachable cell co-ordinates)
         /// </summary>
         public static void InitializeReachableCells()
         {
@@ -50,7 +50,7 @@ namespace GoF.Model
             BottomRightCoOrdinateList.Add(new CoOrdinates(-1, 0));
             ReachableCells.Add(innerCell, BottomRightCoOrdinateList);
 
-            // Add Reachable adjacent cell co-ordinates for top side cell into Dictionary with BottomRightCorner TopSide as key
+            // Add Reachable adjacent cell co-ordinates for top side cell into Dictionary with TopSide as key
             innerCell = CellTypeEnum.TopSide;
             List<CoOrdinates> TopSideCoOrdinateList = new List<CoOrdinates>();
             TopSideCoOrdinateList.Add(new CoOrdinates(0, 1));
@@ -60,7 +60,7 @@ namespace GoF.Model
             TopSideCoOrdinateList.Add(new CoOrdinates(0, -1));
             ReachableCells.Add(innerCell, TopSideCoOrdinateList);
 
-            // Add Reachable adjacent cell co-ordinates for bottom side cell into Dictionary with BottomRightCorner BottomSide as key
+            // Add Reachable adjacent cell co-ordinates for bottom side cell into Dictionary with BottomSide as key
             innerCell = CellTypeEnum.BottomSide;
             List<CoOrdinates> BottomSideCoOrdinateList = new List<CoOrdinates>();
             BottomSideCoOrdinateList.Add(new CoOrdinates(0, -1));
@@ -70,7 +70,7 @@ namespace GoF.Model
             BottomSideCoOrdinateList.Add(new CoOrdinates(0, 1));
             ReachableCells.Add(innerCell, BottomSideCoOrdinateList);
 
-            // Add Reachable adjacent cell co-ordinates for left side cell into Dictionary with BottomRightCorner LeftSide as key
+            // Add Reachable adjacent cell co-ordinates for left side cell into Dictionary with LeftSide as key
             innerCell = CellTypeEnum.LeftSide;
             List<CoOrdinates> LeftSideCoOrdinateList = new List<CoOrdinates>();
             LeftSideCoOrdinateList.Add(new CoOrdinates(-1, 0));
@@ -80,7 +80,7 @@ namespace GoF.Model
             LeftSideCoOrdinateList.Add(new CoOrdinates(1, 0));
             ReachableCells.Add(innerCell, LeftSideCoOrdinateList);
 
-            // Add Reachable adjacent cell co-ordinates for right side cell into Dictionary with BottomRightCorner RightSide as key
+            // Add Reachable adjacent cell co-ordinates for right side cell into Dictionary with RightSide as key
             innerCell = CellTypeEnum.RightSide;
             List<CoOrdinates> RightSideCoOrdinateList = new List<CoOrdinates>();
             RightSideCoOrdinateList.Add(new CoOrdinates(1, 0));
@@ -90,7 +90,7 @@ namespace GoF.Model
             RightSideCoOrdinateList.Add(new CoOrdinates(-1, 0));
             ReachableCells.Add(innerCell, RightSideCoOrdinateList);
 
-            // Add Reachable adjacent cell co-ordinates for Center cell into Dictionary with BottomRightCorner Center as key
+            // Add Reachable adjacent cell co-ordinates for Center cell into Dictionary with Center as key
             innerCell = CellTypeEnum.Center;
             List<CoOrdinates> CenterCoOrdinateList = new List<CoOrdinates>();
             CenterCoOrdinateList.Add(new CoOrdinates(-1, 0));
@@ -103,7 +103,7 @@ namespace GoF.Model
             CenterCoOrdinateList.Add(new CoOrdinates(-1, -1));
             ReachableCells.Add(innerCell, CenterCoOrdinateList);
 
-            // Add Reachable adjacent cell co-ordinates for outer top side cell into Dictionary with BottomRightCorner OuterTopSide as key
+            // Add Reachable adjacent cell co-ordinates for outer top side cell into Dictionary with OuterTopSide as key
             innerCell = CellTypeEnum.OuterTopSide;
             List<CoOrdinates> OuterTopSideCoOrdinateList = new List<CoOrdinates>();
             OuterTopSideCoOrdinateList.Add(new CoOrdinates(1, -1));
@@ -111,7 +111,7 @@ namespace GoF.Model
             OuterTopSideCoOrdinateList.Add(new CoOrdinates(1, 1));
             ReachableCells.Add(innerCell, OuterTopSideCoOrdinateList);
 
-            // Add Reachable adjacent cell co-ordinates for outer right side cell into Dictionary with BottomRightCorner OuterRightSide as key
+            // Add Reachable adjacent cell co-ordinates for outer right side cell into Dictionary with OuterRightSide as key
             innerCell = CellTypeEnum.OuterRightSide;
             List<CoOrdinates> OuterRightSideCoOrdinateList = new List<CoOrdinates>();
             OuterRightSideCoOrdinateList.Add(new CoOrdinates(-1, -1));
@@ -119,7 +119,7 @@ namespace GoF.Model
             OuterRightSideCoOrdinateList.Add(new CoOrdinates(1, -1));
             ReachableCells.Add(innerCell, OuterRightSideCoOrdinateList);
 
-            // Add Reachable adjacent cell co-ordinates for outer bottom side cell into Dictionary with BottomRightCorner OuterBottomSide as key
+            // Add Reachable adjacent cell co-ordinates for outer bottom side cell into Dictionary with OuterBottomSide as key
             innerCell = CellTypeEnum.OuterBottomSide;
             List<CoOrdinates> OuterBottomSideCoOrdinateList = new List<CoOrdinates>();
             OuterBottomSideCoOrdinateList.Add(new CoOrdinates(-1, -1));
@@ -127,7 +127,7 @@ namespace GoF.Model
             OuterBottomSideCoOrdinateList.Add(new CoOrdinates(-1, 1));
             ReachableCells.Add(innerCell, OuterBottomSideCoOrdinateList);
 
-            // Add Reachable adjacent cell co-ordinates for outer left side cell into Dictionary with BottomRightCorner OuterLeftSide as key
+            // Add Reachable adjacent cell co-ordinates for outer left side cell into Dictionary with OuterLeftSide as key
             innerCell = CellTypeEnum.OuterLeftSide;
             List<CoOrdinates> OuterLeftSideCoOrdinateList = new List<CoOrdinates>();
             OuterLeftSideCoOrdinateList.Add(new CoOrdinates(-1, 1));

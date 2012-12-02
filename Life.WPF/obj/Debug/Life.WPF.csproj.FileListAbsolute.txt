@@ -1,0 +1,15 @@
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.WPF\bin\Debug\Life.WPF.exe.config
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.WPF\bin\Debug\Life.WPF.exe
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.WPF\bin\Debug\Life.WPF.pdb
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.WPF\bin\Debug\GoF.Model.dll
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.WPF\bin\Debug\GoF.Model.pdb
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.WPF\obj\Debug\Life.WPF.csprojResolveAssemblyReference.cache
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.WPF\obj\Debug\MainWindow.baml
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.WPF\obj\Debug\MainWindow.g.cs
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.WPF\obj\Debug\App.g.cs
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.WPF\obj\Debug\Life.WPF_MarkupCompile.cache
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.WPF\obj\Debug\Life.WPF.g.resources
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.WPF\obj\Debug\Life.WPF.Properties.Resources.resources
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.WPF\obj\Debug\Life.WPF.csproj.GenerateResource.Cache
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.WPF\obj\Debug\Life.WPF.exe
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.WPF\obj\Debug\Life.WPF.pdb

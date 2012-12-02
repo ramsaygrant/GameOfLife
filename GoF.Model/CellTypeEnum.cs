@@ -8,7 +8,7 @@ namespace GoF.Model
 {
     /// <summary>
     /// Cell types are unique types of cell in grid of any size
-    /// Every cell type has distinct reachable djacent cells which can be traversed
+    /// Every cell type has distinct reachable adjacent cells which can be traversed
     /// </summary>
     enum CellTypeEnum
     {

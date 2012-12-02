@@ -57,6 +57,14 @@ namespace GoF.Model
             ReachableCell.InitializeReachableCells();
         }
 
+        public void Play()
+        {
+            for (int i = 0; i < MaxGenerations; i++)
+            {
+                ProcessGeneration();
+            }
+        }
+
         /// <summary>
         /// Toggle cell state i.e. dead or alive
         /// </summary>

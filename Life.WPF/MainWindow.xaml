@@ -1,0 +1,9 @@
+﻿<Window x:Class="Life.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid Name="LifeGrid" HorizontalAlignment="Left" Height="300" Margin="101,10,0,0" VerticalAlignment="Top" Width="300" ShowGridLines="True"/>
+       
+    </Grid>
+</Window>

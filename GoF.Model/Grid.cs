@@ -19,7 +19,7 @@ namespace GoF.Model
         }
 
         /// <summary>
-        /// Setup grid by using row and column count
+        /// Setup grid using row and column count
         /// </summary>
         /// <param name="rows"></param>
         /// <param name="columns"></param>
@@ -38,6 +38,7 @@ namespace GoF.Model
                 GridObj.Add(row);
             }
             ColumnCount = columns;
+            RowCount = rows;
         }
 
         /// <summary>
@@ -56,8 +57,10 @@ namespace GoF.Model
         /// <returns>returns cell</returns>
         public Cell this[int x, int y]
         {
-            get { if (GridObj.Count <= x || ColumnCount <= y) throw new ArgumentOutOfRangeException("Argument out of bound"); return GridObj[x].Cells[y]; }
-            set { if (GridObj.Count <= x || ColumnCount <= y) throw new ArgumentOutOfRangeException("Argument out of bound"); GridObj[x].Cells[y] = value; }
+            get { if (GridObj.Count <= x || ColumnCount <= y) throw new ArgumentOutOfRangeException("Argument out of bound"); 
+                return GridObj[x].Cells[y]; }
+            set { if (GridObj.Count <= x || ColumnCount <= y) throw new ArgumentOutOfRangeException("Argument out of bound"); 
+                GridObj[x].Cells[y] = value; }
         }
         /// <summary>
         /// Indexer to get grid row by using index for ease of use

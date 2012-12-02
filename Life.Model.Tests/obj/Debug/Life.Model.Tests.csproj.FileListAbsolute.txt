@@ -1,0 +1,7 @@
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.Model.Tests\bin\Debug\Life.Model.Tests.dll
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.Model.Tests\bin\Debug\Life.Model.Tests.pdb
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.Model.Tests\bin\Debug\Life.Model.dll
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.Model.Tests\bin\Debug\Life.Model.pdb
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.Model.Tests\obj\Debug\Life.Model.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.Model.Tests\obj\Debug\Life.Model.Tests.dll
+C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.Model.Tests\obj\Debug\Life.Model.Tests.pdb
