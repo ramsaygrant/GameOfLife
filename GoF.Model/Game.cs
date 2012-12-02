@@ -59,10 +59,8 @@ namespace GoF.Model
 
         public void Play()
         {
-            for (int i = 0; i < MaxGenerations; i++)
-            {
+            
                 ProcessGeneration();
-            }
         }
 
         /// <summary>

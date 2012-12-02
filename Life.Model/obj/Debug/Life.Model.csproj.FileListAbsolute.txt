@@ -1,5 +1,4 @@
 C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.Model\bin\Debug\Life.Model.dll
 C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.Model\bin\Debug\Life.Model.pdb
-C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.Model\obj\Debug\Life.Model.csprojResolveAssemblyReference.cache
 C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.Model\obj\Debug\Life.Model.dll
 C:\Users\Rams\Documents\Visual Studio 2012\Projects\GameOfLife\Life.Model\obj\Debug\Life.Model.pdb

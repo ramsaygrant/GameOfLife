@@ -69,6 +69,17 @@ namespace GoF.Model
         /// </summary>
         /// <param name="sourceGrid"></param>
         /// <param name="targetGrid"></param>
+        //private static void AssignCellValues(Grid sourceGrid, Grid targetGrid)
+        //{
+        //    for (int i = 0; i < sourceGrid.RowCount; i++)
+        //    {
+        //        for (int j = 0; j < sourceGrid.ColumnCount; j++)
+        //        {
+        //            targetGrid[i, j].IsAlive = sourceGrid[i, j].IsAlive;
+        //        }
+        //    }
+        //}
+
         private static void AssignCellValues(Grid sourceGrid, Grid targetGrid)
         {
             for (int i = 0; i < sourceGrid.RowCount; i++)

@@ -25,6 +25,7 @@ namespace GoF.Model
         public static void ChangeCellsState(Grid inputGrid, Grid outputGrid, CoOrdinates coOrdinates)
         {
             int liveNeighbourCount = CountAliveNeighbours(inputGrid, coOrdinates);
+           // int l = CountLivingNeighbours(inputGrid, coOrdinates);
             lock (outputGrid)
             {
                 if (IsAliveInNextState(inputGrid[coOrdinates.X, coOrdinates.Y], liveNeighbourCount))
@@ -36,6 +37,32 @@ namespace GoF.Model
 
             }
 
+        }
+
+
+        private static int CountLivingNeighbours(Grid grid, CoOrdinates cellXY)
+        {
+            var count = 0;
+            if (cellXY.X > 0 & cellXY.Y > 0)
+            {
+                CoOrdinates[,] neighbours = new CoOrdinates[,]
+            {
+                {new CoOrdinates(cellXY.X - 1, cellXY.Y - 1)},
+                {new CoOrdinates(cellXY.X , cellXY.Y - 1)},
+                {new CoOrdinates(cellXY.X + 1, cellXY.Y-1)},
+                {new CoOrdinates(cellXY.X + 1, cellXY.Y )},
+                {new CoOrdinates(cellXY.X - 1, cellXY.Y + 1)},
+                {new CoOrdinates(cellXY.X - 1, cellXY.Y)},
+                {new CoOrdinates(cellXY.X , cellXY.Y +1)},
+                {new CoOrdinates(cellXY.X + 1, cellXY.Y+1)}
+            };
+
+                foreach (CoOrdinates c in neighbours)
+                {
+                    count = grid.GridObj[c.X].Cells[c.Y].IsAlive ? count += 1 : count;
+                }
+            }
+            return count;
         }
 
         /// <summary>
@@ -179,6 +206,7 @@ namespace GoF.Model
             //Boolean IsPreviousCellsFilled = false;
             // start with the index 1  until 1 less than last index as index 0 and last index cannot have 3 live adjacent cell in any case
             // This index 0 and last index must be included if rule is changed in future; dead can alive with 2 live adjacent cells
+
             for (int j = 1; j < inputGrid.ColumnCount - 1; j++)
             {
                 if (Rule.CountAliveNeighbours(inputGrid, new CoOrdinates(rowId, j)) == 3)
@@ -204,12 +232,45 @@ namespace GoF.Model
                         {
                             outputGrid.AddRow(newRow);
                         }
+                        //outputGrid.RowCount += 1;
                         rowCreatedFlag = true;
                     }
                     int XAxis = (rowId == -1) ? 0 : outputGrid.RowCount - 1;
                     outputGrid[XAxis, j].IsAlive = true;
                 }
             }
+
+            //for (int j = 1; j < inputGrid.ColumnCount - 1; j++)
+            //{
+            //    if (Rule.CountAliveNeighbours(inputGrid, new CoOrdinates(rowId, j)) == 3)
+            //    {
+            //        if (rowCreatedFlag == false)
+            //        {
+            //            Row newRow = new Row();
+            //            //if (IsPreviousCellsFilled == false)
+            //            //{
+            //            for (int k = 0; k < outputGrid.ColumnCount; k++)
+            //            {
+            //                // Fill all cells with false
+            //                Cell newDeadCell = new Cell(false);
+            //                newRow.AddCell(newDeadCell);
+            //            }
+            //            //IsPreviousCellsFilled = true;
+            //            //}
+            //            if (rowId == -1)
+            //            {
+            //                outputGrid.InsertRow(0, newRow);
+            //            }
+            //            else
+            //            {
+            //                outputGrid.AddRow(newRow);
+            //            }
+            //            rowCreatedFlag = true;
+            //        }
+            //        int XAxis = (rowId == -1) ? 0 : outputGrid.RowCount - 1;
+            //        outputGrid[XAxis, j].IsAlive = true;
+            //    }
+            //}
         }
     }
 }
