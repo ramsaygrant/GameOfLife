@@ -1,1 +1,3 @@
-C# Conway's Game Of Life 
+C# Conway's Game Of Life
+
+Hacking around with different implementations of Conway's game looking for the best way of applying the rules when performing generational transitions.
