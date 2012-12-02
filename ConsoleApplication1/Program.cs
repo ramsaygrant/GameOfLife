@@ -12,18 +12,17 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Game game = new Game(24, 24);
+            Game game = new Game(12, 12);
             game.MaxGenerations = 400;
-            game.ToggleGridCell(4, 2);
-            game.ToggleGridCell(4,3);
+            game.ToggleGridCell(1,0);
+            game.ToggleGridCell(1, 3);
+            game.ToggleGridCell(2, 1);
+            game.ToggleGridCell(2, 3);
+            game.ToggleGridCell(3, 0);
+            game.ToggleGridCell(3,1);
+            game.ToggleGridCell(4,2);
             game.ToggleGridCell(4, 4);
-            game.ToggleGridCell(4, 5);
-            game.ToggleGridCell(5, 2);
-            game.ToggleGridCell(5, 5);
-            game.ToggleGridCell(5, 4);
-            game.ToggleGridCell(6, 3);
-            game.ToggleGridCell(6, 4);
-            game.ToggleGridCell(6, 6);
+            game.ToggleGridCell(4, 3);
             //game.ToggleGridCell(4, 1);
             //game.ToggleGridCell(4, 0);
 
@@ -41,7 +40,7 @@ namespace ConsoleApplication1
                     }
                     Console.WriteLine();
                 }
-                Thread.Sleep(200);
+                Thread.Sleep(500);
             }
             Console.Read();
         }
