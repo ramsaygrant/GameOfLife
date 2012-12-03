@@ -12,21 +12,62 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Game game = new Game(12, 12);
+            Game game = new Game(24, 24);
             game.MaxGenerations = 400;
-            game.ToggleGridCell(1,0);
-            game.ToggleGridCell(1, 3);
-            game.ToggleGridCell(2, 1);
-            game.ToggleGridCell(2, 3);
-            game.ToggleGridCell(3, 0);
-            game.ToggleGridCell(3,1);
-            game.ToggleGridCell(4,2);
-            game.ToggleGridCell(4, 4);
-            game.ToggleGridCell(4, 3);
-            //game.ToggleGridCell(4, 1);
-            //game.ToggleGridCell(4, 0);
+            //game.ToggleGridCell(1, 0);
+            //game.ToggleGridCell(1, 3);
+            //game.ToggleGridCell(2, 1);
+            //game.ToggleGridCell(2, 3);
+            //game.ToggleGridCell(3, 0);
+            //game.ToggleGridCell(3, 1);
+            //game.ToggleGridCell(4, 2);
+            //game.ToggleGridCell(4, 4);
+            //game.ToggleGridCell(4, 3);
 
-            for (int i = 0; i < 200; i++)
+            //game.ToggleGridCell(8, 8);
+            //game.ToggleGridCell(8, 6);
+            //game.ToggleGridCell(8, 7);
+            //game.ToggleGridCell(9, 5);
+            //game.ToggleGridCell(9, 7);
+            //game.ToggleGridCell(10, 7);
+            //game.ToggleGridCell(10, 6);
+            //game.ToggleGridCell(11, 5);
+            //game.ToggleGridCell(11, 8);
+
+            //game.ToggleGridCell(7, 6);
+            //game.ToggleGridCell(7, 7);
+            //game.ToggleGridCell(8, 6);
+            //game.ToggleGridCell(8, 9);
+            //game.ToggleGridCell(8, 10);
+            //game.ToggleGridCell(9, 8);
+            //game.ToggleGridCell(9, 10);
+            //game.ToggleGridCell(9, 9);
+            //game.ToggleGridCell(10,6);
+            //game.ToggleGridCell(10, 7);
+
+            //game.ToggleGridCell(6, 6);
+            //game.ToggleGridCell(7, 6);
+            //game.ToggleGridCell(8, 6);
+            //game.ToggleGridCell(7, 5);
+            //game.ToggleGridCell(7, 7);
+
+            //game.ToggleGridCell(5, 7);
+            //game.ToggleGridCell(6, 6);
+            //game.ToggleGridCell(7, 7);
+            //game.ToggleGridCell(8, 8);
+            //game.ToggleGridCell(8, 6);
+            //game.ToggleGridCell(6, 8);
+            //game.ToggleGridCell(9, 7);
+            //game.ToggleGridCell(9, 8);
+
+            //R-Pentomino
+            game.ToggleGridCell(5, 5);
+            game.ToggleGridCell(5, 6);
+            game.ToggleGridCell(6, 6);
+            game.ToggleGridCell(4, 6);
+            game.ToggleGridCell(4, 7);
+
+            for (int i = 0; i < game.MaxGenerations; i++)
             {
                 Console.Clear();
                 game.Play();
@@ -40,7 +81,7 @@ namespace ConsoleApplication1
                     }
                     Console.WriteLine();
                 }
-                Thread.Sleep(500);
+                Thread.Sleep(100);
             }
             Console.Read();
         }
